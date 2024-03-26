@@ -4,8 +4,8 @@
 
 ### First of all you should run docker in your local machine 
 
-then 
 
+## Backend
 ```
 cd backend
 
@@ -17,3 +17,20 @@ npm run migration
 
 npm run dev
 ```
+
+## Frontend
+```
+cd frontend
+
+npm i
+
+npm eun dev
+```
+
+Go Local host 3000 and test 
+
+
+# ALERT 
+
+### Front end doesnt have design and cool features 
+### Its for testing Backend

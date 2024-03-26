@@ -5,6 +5,7 @@ import IndexRouter from "./routes/index";
 import { AppDataSource } from "./configs/postgres";
 import "reflect-metadata";
 import { errorHandler } from "./middleware/error";
+import { addMockData } from "./seeders";
 
 export class ExpressLoader {
     public app: express.Application;
@@ -28,6 +29,7 @@ export class ExpressLoader {
         try {
             this.app.listen(this.port, async () => {
                 await AppDataSource.initialize();
+                await addMockData()
                 console.log(`App listening on port ${this.port}`);
             });
         } catch (error) {

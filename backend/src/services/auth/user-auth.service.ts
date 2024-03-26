@@ -1,4 +1,3 @@
-import validate from "deep-email-validator";
 import { IUserLogin, IUserRegister } from "../../interfaces/auth-types";
 import { userRepository } from "../../repositories";
 import { UserDto } from "../../dto/user-dto";
@@ -7,9 +6,6 @@ import { generateToken } from "../../utils/generateToken";
 
 export class UserAuthService {
     static async signup(registerForm: IUserRegister) {
-        const isValidEmail = await validate(registerForm.email);
-        if (!isValidEmail.valid) throw new Error("Unknown Email");
-
         const user = await userRepository.findOneBy({
             email: registerForm.email,
         });
@@ -19,7 +15,7 @@ export class UserAuthService {
         const newUser = userRepository.create({
             ...registerForm,
             password: hashedPassword,
-            admin: false
+            admin: true
         });
         await userRepository.save(newUser);
 

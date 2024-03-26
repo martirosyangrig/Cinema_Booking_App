@@ -14,7 +14,7 @@ export const verifyUser = async (
         const decoded = verifyToken(accessToken);
 
         req.userId = decoded.id;
-        req.isAdmin = decoded.admi;
+        req.isAdmin = decoded.admin;
         next();
     } catch (error) {
         res.status(HttpStatusCodes.INTERNAL_SERVER_ERROR).send(error);

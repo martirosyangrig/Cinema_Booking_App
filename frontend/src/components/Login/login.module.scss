@@ -1,0 +1,112 @@
+.wraper {
+    width: 100%;
+    flex: 1;
+    background-color: #f7fafc;
+    display: flex;
+    justify-content: center;
+  
+    .continer {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 120px;
+      gap: 3px;
+  
+      h1 {
+        font-size: 35px;
+        margin-top: 70px;
+      }
+  
+      form {
+        width: 65%;
+        height: 44%;
+        border: 1px solid rgb(243, 238, 238);
+        border-radius: 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+  
+        .emailContiner {
+          width: 88%;
+          height: 35%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 15px;
+  
+          label {
+            font-size: 15px;
+            font-weight: 500;
+          }
+  
+          input {
+            width: 94%;
+            height: 24px;
+            border: 1px solid rgb(236, 226, 226);
+            border-radius: 4px;
+            position: relative;
+            padding: 10px;
+            font-size: 17px;
+          }
+          input:focus {
+            outline: none;
+            border-color: rgb(93, 198, 240);
+            border-width: 2px;
+            border-radius: 8px;
+          }
+          .passContiner {
+            border: 1px solid;
+            position: relative;
+            border: none;
+  
+            button {
+              width: 53px;
+              height: 30px;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              z-index: 1;
+              border: none;
+              background-color: #edf2f7;
+              color: #1a202c;
+              cursor: pointer;
+              font-size: 13px;
+              transform: translate(-9px, 9px);
+            }
+          }
+        }
+  
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          width: 88%;
+          height: 45px;
+          background-color: #3182ce;
+          border: none;
+          border-radius: 6px;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+  
+      .singupInfo {
+        font-size: 19px;
+        margin: 6px;
+      }
+      .signup {
+        text-decoration: none;
+        font-size: 18px;
+        color: #4299e1;
+      }
+      .signup:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

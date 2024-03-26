@@ -1,0 +1,133 @@
+.wraper {
+    width: 100%;
+    flex: 1;
+    background-color: #f7fafc;
+    display: flex;
+    justify-content: center;
+    margin-top: 76px;
+  
+    .continer {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      column-gap: 10px;
+  
+      h1 {
+        line-height: 1.2;
+  
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+  
+      form {
+        width: 80%;
+        height: 79%;
+        border: 1px solid rgb(243, 238, 238);
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+  
+        .formContiner {
+          width: 88%;
+          height: 86%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 15px;
+          position: relative;
+  
+          label {
+            font-size: 15px;
+            font-weight: 500;
+          }
+  
+          input {
+            width: 94%;
+            height: 24px;
+            border: 1px solid rgb(236, 226, 226);
+            border-radius: 4px;
+            position: relative;
+            padding: 10px;
+            font-size: 17px;
+          }
+          input:focus {
+            outline: none;
+            border-color: rgb(93, 198, 240);
+            border-width: 2px;
+            border-radius: 8px;
+          }
+        }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          width: 88%;
+          height: 45px;
+          background-color: #3182ce;
+          border: none;
+          border-radius: 6px;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+      .signinContiner {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .singinInfo {
+          font-size: 19px;
+          margin: 6px;
+        }
+        .signin {
+          text-decoration: none;
+          font-size: 18px;
+          color: #4299e1;
+        }
+        .signin:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    
+    @media only screen and (max-width: 1920px) {
+      .continer {
+        width: 43%; 
+      }
+    }
+  
+    @media only screen and (max-width: 1530px) {
+      .continer {
+        width: 55%;
+      }
+    }
+  
+    @media only screen and (max-width: 1024px) {
+      .continer {
+        width: 75%; 
+      }
+    }
+  
+    @media only screen and (max-width: 768px) {
+      .continer {
+        width: 80%; 
+      }
+    }
+  
+    @media only screen and (max-width: 340px) {
+      .continer {
+        width: 100%; 
+      }
+    }
+  }
+  

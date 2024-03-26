@@ -1,0 +1,93 @@
+.wraper {
+    width: 100%;
+    flex: 1;
+    background-color: #D6DEE1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 76px;
+    gap: 10px;
+
+    .continer {
+        width: 80%;
+        height: 100%;
+        border: 1px solid;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        .headerCont {
+            display: flex;
+            gap: 30px;
+            
+            .movieInfo {
+                width: 250px;
+                height: 250px;
+                border: 1px solid;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .bookSeatCont {
+                width: 300px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+
+                .bookSeat {
+                    width: 60px;
+                    height: 25px;
+                }
+            }
+        }
+
+        .seatsContiner {
+            width: 60%; 
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid red;
+            justify-content: center; 
+
+            .bookedSeat {
+                width: calc(10% - 4px);
+                height: 20px;
+                border: 1px solid;
+                margin: 2px; 
+                box-sizing: border-box; 
+                background-color: rgb(23, 233, 104);
+                
+            }
+            .selectedSeat {
+                width: calc(10% - 4px);
+                height: 20px;
+                border: 1px solid;
+                margin: 2px; 
+                box-sizing: border-box; 
+                background-color: rgb(23, 107, 233);
+                cursor: pointer;
+            }
+            .seat {
+                width: calc(10% - 4px);
+                height: 20px;
+                border: 1px solid;
+                margin: 2px; 
+                box-sizing: border-box; 
+                background-color: rgb(197, 197, 197);
+                cursor: pointer;
+            }
+        }
+
+        .myBookings {
+            width: 400px;
+            height: 100px;
+            display: flex;
+            gap: 8px;
+        }
+    }
+}
