@@ -24,7 +24,7 @@ cd frontend
 
 npm i
 
-npm eun dev
+npm run dev
 ```
 
 Go Local host 3000 and test 
